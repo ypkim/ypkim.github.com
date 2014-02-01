@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Technical issue Blog]]></title><description><![CDATA[My Technical issue Blog]]></description><link>http://ypkim.github.io</link><image><url>http://ypkim.github.io/public/img/favorite.png</url><title>My Technical issue Blog</title><link>http://ypkim.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 01 Feb 2014 14:21:41 GMT</lastBuildDate><atom:link href="http://ypkim.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[haroopress setup]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/4a56c89f2fd7ca575c17083ff0f356b9?r=pg&s=48.jpg&d=identicon"><br/><h1 id="toc_7">Haroopress 설치기</h1>
+<p>하루프레스는 마크다운을 기반으로한 블로그 포스팅 툴로서 워드프래스와 같은 CMS(Contents Management System) Tool이지만 개발자들이 익숙한 콘솔기반의 프래싱 툴이라고 할 수 있다. 즉, 콘솔에 익숙하지 않은 분들은 사용하기 오히려 어렵거나 이해하기 어려울 수 있다. 즉 네이버에서 글쓰듯 위지위그 환경이 제공되지 못하고 기본적으로 Git 에 대한 이해가 필수 이다 보니 더더욱 그러한 듯 하다.</p><p>우선 설치 전에 필요한 환경과 필수요소를 정리한다. </p><p>하루프레스의 제작자 홈페이지에 잘 셜명되어 있으나, 조금은 어려운 듯 해서 조금더 쉽게 작성해 보기로 한다.</p><p>본 문서의 용도는 다른 사람을 위하기 보다는 필자 본인의 경험을 남겨 놓기 위한 용도에 더욱 가깝다는 점을 우선 밝힌다.</p>]]></description><link>http://ypkim.github.io/post/haroopress-setup</link><guid isPermaLink="false">haroopress-setup</guid><dc:creator><![CDATA[<a href="" target="_blank">YP Kim</a>]]></dc:creator><pubDate>Sat, 01 Feb 2014 14:16:00 GMT</pubDate></item><item><title><![CDATA[Welcome to haroopress]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/a8618a255192bd842fdd62d099776735?r=pg&s=48.jpg&d=identicon"><br/><h3 id="toc_15">환영합니다.</h3>
+
+<ul>
+<li>Welcome</li>
+<li>歡迎</li>
+<li>bienvenida</li>
+<li>accueil</li>
+<li>willkommen</li>
+<li>ようこそ</li>
+<li>välkommet</li>
+<li>grata</li>
+<li>добро пожаловать</li>
+</ul>
+
+<h3 id="toc_16">Intro</h3>
+<p>하루프레스는 하루의 이야기를 블로깅하기 위한 정적 페이지 블로그 엔진입니다.</p>
+<h3 id="toc_17">Haroopress?</h3>
+
+<ul>
+<li><a href="http://haroopress.com/about/">하루프레스?</a></li>
+<li><a href="http://haroopress.com/slides/">하루프레스 웹 프리젠테이션</a></li>
+<li><a href="http://haroopress.com/book/">하루프레스 eBook</a></li>
+<li><a href="http://haroopress.com/diary">하루프레스 개발 다이어리</a></li>
+</ul>
+
+<h3 id="toc_18">Usage</h3>
+
+<ul>
+<li><a href="http://haroopress.com/post/haroopress-install-guide-movie/">5분만에 설치하는 하루프레스 동영상</a></li>
+<li><a href="http://haroopress.com/post/haroopress-quick-guide/">하루프레스 퀵 가이드</a></li>
+<li><a href="http://haroopress.com/post/haroopress-posting-guide/">하루프레스 포스팅 가이드</a></li>
+<li><a href="http://haroopress.com/post/haroopress-default-data-format/">하루프레스 기본 데이터 규약</a></li>
+<li><a href="http://haroopress.com/post/haroopress-update-my-profile/">하루프레스 저작자 프로파일 수정하기</a></li>
+<li><a href="http://haroopress.com/post/harupeureseu-hwangyeongseoljeong-hagi/">하루프레스 환경설정 하기</a></li>
+</ul>
+
+<h3 id="toc_19">History</h3>
+
+<ul>
+<li><a href="https://github.com/rhiokim/haroopress/wiki/Change-History">변경 이력</a></li>
+</ul>
+]]></description><link>http://ypkim.github.io/post/welcome-to-haroopress</link><guid isPermaLink="false">welcome-to-haroopress</guid><dc:creator><![CDATA[<a href="haroopress" target="_blank">haroopress</a>]]></dc:creator><pubDate>Tue, 21 Feb 2012 00:00:00 GMT</pubDate></item></channel></rss>
