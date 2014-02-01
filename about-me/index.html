@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>YP Kim's articles |  My Technical issue Blog</title>
+    <title>About Me My Technical issue Blog</title>
     <meta name="description" content="">
     <meta name="author" content="YP Kim">
     <meta name="keywords" content="" />
@@ -26,18 +26,14 @@
     <link href="/css/haroopress.css" rel="stylesheet">
     <link href="/css/theme.css" rel="stylesheet">
     <link href="/css/code/default.css" rel="stylesheet">
-    
+
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="72x72" href="/favicon-64.png">
 
-    <!-- Le javascript -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.jsonp.js"></script>
-    <script src="/js/mustache.js"></script>
-    <script src="/js/apps/github.js"></script>
-    <script src="/js/apps/twitter.js"></script>
+    <script src="/js/apps/toc.js"></script>
 </head>
 <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
@@ -75,79 +71,37 @@
       </div>
     </div>
 
-    <div class="container page-author">
-    <div class="row">
-        <div class="span3">
-                
-    <div class="well contributors">
-        <div class="pull-right">
-            <a href="/authors"><i class=" icon-info-sign"></i></a>
-        </div>
-        <h6>contributors</h6>
-        
-        <div class="row-fluid">
-            <a class="pull-left" href="/authors/YP Kim" title="undefined">
-                <img src="http://www.gravatar.com/avatar/4a56c89f2fd7ca575c17083ff0f356b9?r=pg&amp;s=128.jpg&amp;d=identicon" />
-            </a>
-            <p>
-                <strong>YP Kim</strong><br/>
-                <a href="https://twitter.com//" target="_blank">@</a>
-            </p>
-        </div>
-        <hr>
-        
-        <div class="row-fluid">
-            <a class="pull-left" href="/authors/haroopress" title="undefined">
-                <img src="http://www.gravatar.com/avatar/a8618a255192bd842fdd62d099776735?r=pg&amp;s=128.jpg&amp;d=identicon" />
-            </a>
-            <p>
-                <strong>haroopress</strong><br/>
-                <a href="https://twitter.com//haroopress" target="_blank">@haroopress</a>
-            </p>
-        </div>
-        <hr>
-        
-    </div>
     
-                        <div class="well">
-                <ul class="nav nav-list">
-                    <li class="nav-header">Categories</li>
-                    <li class=""><a href="/category"><i class="icon-home"></i> Home</a></li>
-                    
-                    <li><a href="/category/it"><i class="icon-book"></i> it</a></li>
-                    
-                </ul>
-            </div>
+<link href="/css/code/default.css" rel="stylesheet">
 
-        </div>
-        <div class="span9">
-            <div class="well bg">
-                <div class="pull-right">
-                    <ul class="thumbnails">
-                        <li class="thumbnail">
-                            <a>
-                                <img src="http://www.gravatar.com/avatar/4a56c89f2fd7ca575c17083ff0f356b9?r=pg&amp;s=128.jpg&amp;d=identicon" width="48"/>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="page-header">
-                    <h1>YP Kim's Articles
-                    </h1>
-                </div>
-                <div class="row">
-                    <div class="span8">
-                        <ul>
-                    
-                            <li>
-                                <h3>
-                                    <a href="/post/haroopress-setup">haroopress setup</a> <small>at Saturday, February 1 2014 11:16 PM</small>
-                                </h3>
-                            </li>
-                    
-                        </ul>
-                    </div>
-                </div>
+<div class="container page-page">
+    <div class="row">
+        <div class="span12">
+            <div class="well markdown-wrapper">
+                <ul class="unstyled share pull-right">
+                    <li class="twitter">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://ypkim.github.io/about-me/" data-via="" data-hashtags="">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        <!--a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                        <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script-->
+                    </li>
+                    <li class="facebook">
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) {return;}
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-href="http://ypkim.github.io/about-me/"></div>
+                    </li>
+                    <li class="google">
+                        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+                        <g:plusone size="medium"></g:plusone>
+                    </li>
+                </ul>
+                <p>About me?</p>
             </div>
         </div>
     </div>
@@ -169,8 +123,31 @@
         </div>
     </footer>
 
+    <script>
+        // fix sub nav on scroll
+        var $win = $(window)
+          , $nav = $('.subnav')
+          , navTop = $('.subnav').length && $('.subnav').offset().top - 40
+          , isFixed = 0
+
+        processScroll()
+
+        $win.on('scroll', processScroll)
+
+        function processScroll() {
+          var i, scrollTop = $win.scrollTop()
+          if (scrollTop >= navTop && !isFixed) {
+            isFixed = 1
+            $nav.addClass('subnav-fixed')
+          } else if (scrollTop <= navTop && isFixed) {
+            isFixed = 0
+            $nav.removeClass('subnav-fixed')
+          }
+        }
+    </script>
+    
     
 
-
+    
 </body>
 </html>
